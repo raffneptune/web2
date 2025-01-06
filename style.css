@@ -1,0 +1,651 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.home-content h1{
+    font-size: 40px; 
+    font-weight: bolder;
+}
+.home-content h3{
+    font-weight: 700;
+    text-align: justify;
+}
+.header{
+    position: fixed;
+    top: 0;
+    width: 400px;
+    right: -400px;
+    height: 100vh;
+    z-index: 2;
+    transition: 1s;
+    background-image: linear-gradient(to top, rgba(245, 209, 209, 0),rgb(245, 209, 209));
+}
+nav{
+    background-image: linear-gradient(to bottom, rgb(245, 209, 209,0), rgb(245, 245, 245, 1)), url(images/raffneptunelandscape.jpg);
+    background-position: center;
+    background-size: cover;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.nav-links{
+    list-style: none;
+    position: absolute;
+    padding: 10px;  
+    justify-content: space-between;
+}
+.nav-links a{
+    position: relative;
+    font-size: 18px;
+    color: black;
+    padding-left: 30px;
+    text-decoration: none;
+    font-weight: 1000;
+    transition: .3s;
+    cursor: pointer;
+}
+.nav-links a:hover {
+    color: rgb(255, 154, 154);
+}
+.home{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    padding: 0px 10%;
+}
+.home-content{
+    max-width: 600px;
+}
+.btn1{
+    font-size: large;
+    cursor: pointer;
+    height: 50px;
+    margin-top: 15px;
+    padding: 12px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 15px;
+    background: transparent;
+    transition: 0.3s;
+}
+.btn1:hover{
+    color: #ffffff;
+    border-color: #ffffff;
+}
+.me{
+    width: 100%;
+    padding: 5%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom, rgb(245, 245, 245, 1),rgb(245, 209, 209,0.4), rgb(245,245,245,1)), url(images/raffneptunelandscape.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.me-content{
+    max-width: 800px;
+}
+.me-content h1{
+    font-size: 30px; 
+    font-weight: bolder;
+}
+.me-content p{
+    text-align: justify;
+}
+header .fa-solid{
+    display: flex;
+    z-index: 100;
+    color: black;
+    padding: 10px;
+    justify-content: right;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+div .fa-solid{
+    position: fixed;
+    right: 0;
+    color: black;
+    padding: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+nav .fa-solid:hover{
+    color: rgb(255, 154, 154);
+}
+.me img{
+    position: relative;
+    width: 300px;
+    border-radius: 20px;
+    filter: saturate(0.5) drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.225));
+    margin: 8px;
+}
+.shs{
+    width: 100%;
+    padding: 5%;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgb(245,245,245,1),rgb(245, 209, 209,0.4), rgb(245,245,245,1)), url(images/raffneptunelandscape.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.shs h1{
+    font-size: 30px; 
+    font-weight: bolder;
+}
+.shs p{
+    text-align: justify;
+}
+.shsphoto1{
+    width: 300px;
+    height: 225px;
+    position: relative;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 20px;
+}
+.shsphoto{
+    width: 300px;
+    height: 225px;
+    position: relative;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 20px;
+    filter: saturate(0) drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.229));
+}
+.shs h5{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 5%;
+    text-align: justify;
+    color: black;
+}
+.layerband{
+    opacity: 0;
+    background: linear-gradient(to bottom, rgb(245, 209, 209,0), rgb(245, 209, 209, 1));
+    height: 100%;
+    margin: 10px;
+    width: 100%;
+    transition: 0.3s;
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+.roror{
+    display: flex;
+    justify-content: center;
+}
+.rawr{
+    display: flex;
+    margin-top: 10px;
+}
+.layerband:hover{
+    opacity: 100%;
+}
+.music{
+    width: 100%;
+    padding: 5%;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgb(245,245,245,1),rgb(245, 209, 209,0.4), rgb(245,245,245,1)), url(images/raffneptunelandscape.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.music h1{
+    font-size: 30px; 
+    font-weight: bolder;
+}
+.music h4{
+    font-weight: 700;
+    text-align: center;
+}
+.music p{
+    text-align: justify;
+}
+.musicphoto{
+    position: relative;
+    width: 300px;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.musicphoto1{
+    position: relative;
+    width: 300px;
+    border-radius: 20px;
+    filter: saturate(0) drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.225)) brightness(1.4);
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.pianoarr{
+    display: flex;
+    justify-content: center;
+}
+.layermusic{
+    opacity: 0;
+    background: linear-gradient(to bottom, rgb(245, 209, 209,0), rgb(245, 209, 209, 1));
+    height: 168.75px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    transition: 0.3s;
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+.layermusic:hover{
+    opacity: 100%;
+}
+.pianoarr h5{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 5%;
+    text-align: justify;
+    color: black;
+}
+.coding{
+    width: 100%;
+    padding: 5%;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgb(245,245,245,1),rgb(245, 209, 209,0.4), rgb(245,245,245,1)), url(images/raffneptunelandscape.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.coding h1{
+    font-size: 30px; 
+    font-weight: bolder;
+}
+.coding h4{
+    font-weight: 700;
+    text-align: center;
+}
+.coding p{
+    text-align: justify;
+}
+.pythonphoto{
+    position: relative;
+    width: 300px;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.pythonphoto1{
+    position: relative;
+    width: 300px;
+    border-radius: 20px;
+    filter: saturate(0) drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.225)) brightness(1.4);
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.layerpython{
+    opacity: 0;
+    background: linear-gradient(to bottom, rgb(245, 209, 209,0), rgb(245, 209, 209, 1));
+    height: 180px;
+    margin: 0px;
+    width: 100%;
+    transition: 0.3s;
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+.layerpython:hover{
+    opacity: 100%;
+}
+.layerpython h5{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 5%;
+    text-align: justify;
+    color: black;
+}
+.python{
+    display: flex;
+    justify-content: center;
+}
+.art{
+    width: 100%;
+    padding: 5%;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgb(245,245,245,1),rgb(245, 209, 209,0.4), rgb(245,245,245,1)), url(images/raffneptunelandscape.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.arto{
+    display: flex;
+    justify-content: center;
+}
+.artphoto{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    margin: 10px;
+}
+.artphoto1{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    filter: saturate(0) drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.225));
+
+}
+.layerart{
+    opacity: 0;
+    background: linear-gradient(to bottom, rgb(245, 209, 209,0), rgb(245, 209, 209, 1));
+    height: 400px;
+
+    width: 100%;
+    transition: 0.3s;
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+.layerart:hover{
+    opacity: 100%;
+}
+.arto h5{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 5%;
+    text-align: justify;
+    color: black;
+}
+.art h1{
+    font-size: 30px; 
+    font-weight: bolder;
+}
+.art p{
+    text-align: justify;
+}
+.socials{
+    width: 100%;
+    min-height: 17vh;
+    background-color: rgb(245,245,245,1);
+    background-position: center;
+    background-size: cover;
+}
+.socials h2{ 
+    font-weight: bolder;
+    text-align: center;
+}
+.icons{
+    justify-content: center;
+    font-size: 22px;
+    display: flex;
+    cursor: pointer;
+}
+#icons1{
+    transition: 0.3s;
+    color: black;
+    margin: 10px;
+}
+#icons2{
+    transition: 0.3s;
+    color: black;
+    margin: 10px;
+}
+#icons3{
+    transition: 0.3s;
+    color: black;
+    margin: 10px;
+}
+#icons4{
+    transition: 0.3s;
+    color: black;
+    margin: 10px;
+}
+#icons5{
+    transition: 0.3s;
+    color: black;
+    margin: 10px;
+}
+#icons6{
+    transition: 0.3s;
+    color: black;
+    margin: 10px;
+}
+#icons1:hover{
+    color: rgb(255, 154, 154);
+}
+#icons2:hover{
+    color: rgb(255, 154, 154);
+}
+#icons3:hover{
+    color: rgb(255, 154, 154);
+}
+#icons4:hover{
+    color: rgb(255, 154, 154);
+}
+#icons5:hover{
+    color: rgb(255, 154, 154);
+}
+#icons6:hover{
+    color: rgb(255, 154, 154);
+}
+.socials h5{
+    text-align: center;
+    opacity: 70%;
+    padding-top: 8px;
+}
+.artkes{
+    text-align: center;
+}
+@media(max-width: 800px){
+    .home{
+        display: flex;
+        justify-content: center;
+    }
+    .home-content{
+        text-align: center;
+    }
+    .header{
+        width: 50%;
+        right: -50%;
+    }
+    .nav-links a{
+        font-size: 13px;
+    }
+    .home-content h1{
+        font-size: 35px
+    }
+    .home-content h3{
+        font-size: 17px;
+    }
+    .me{
+        display: inline-block;
+        text-align: center;
+    }
+    .me img{
+        margin-top: 30px;
+    }
+    .shs{
+        text-align: center;
+    }
+    .shsphoto1{
+        width: 160px;
+        height: 120px;
+        margin: 0px;
+        display: inline-block;
+    }
+    .shsphoto{
+        width: 160px;
+        height: 120px;
+        margin: 0px;
+        display: inline-block;
+    }
+    .layerband{
+        margin: 0px;
+    }
+    .shs h5{
+        font-size: 10px;
+    }
+    .roror{
+        display: inline-block;
+    }
+    .pianoarr{
+        display: inline-block;
+    }
+    .musickes{
+        text-align: center;
+    }
+    .musicphoto{
+        margin: 7px;
+    }
+    .python{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .pythonphoto{
+        margin: 7px;
+        width: 300px;
+    }
+    .layerpython{
+        margin-top: 10px;
+        height: 168.75px;
+    }
+    .arto{
+        display: inline-block;
+    }
+    .artphoto{
+        width: 150px;
+        height: 200px;
+    }
+    .artphoto1{
+        width: 150px;
+        height: 200px;
+    }
+    .layerart{
+        height: 200px;
+    }
+    .music-content h1{
+        text-align: center;
+    }
+    .art-content h1{
+        text-align: center;
+    }
+    .coding_project h1{
+        text-align: center;
+    }
+}
+@media(min-width: 800px) and (max-width:1300px){
+    .home{
+        display: flex;
+        justify-content: center;
+    }
+    .home-content{
+        text-align: center;
+    }
+    .header{
+        width: 50%;
+        right: -50%;
+    }
+    .nav-links a{
+        font-size: 20px;
+    }
+    .home-content h1{
+        font-size: 35px
+    }
+    .home-content h3{
+        font-size: 17px;
+    }
+    .me{
+        display: inline-block;
+        text-align: center;
+        min-height: 80vh;
+    }
+    .me img{
+        margin-top: 30px;
+    }
+    .shs{
+        text-align: center;
+        min-height: 60vh;
+    }
+    .shsphoto1{
+        width: 180px;
+        height: 135px;
+        margin: 0px;
+    }
+    .shsphoto{
+        width: 180px;
+        height: 135px;
+        margin: 0px;
+    }
+    .layerband{
+        margin: 0px;
+    }
+    .shs h5{
+        font-size: 10px;
+    }
+    .musickes{
+        text-align: center;
+    }
+    .musicphoto{
+        margin: 7px;
+        width: 240px;
+    }
+    .musicphoto1{
+        width: 240px;
+    }
+    .layermusic{
+        height: 135px;
+    }
+    .proyek{
+        text-align: center;
+    }
+    .pythonphoto{
+        margin: 7px;
+        width: 240px;
+    }
+    .pythonphoto1{
+        width: 240px;
+    }
+    .layerpython{
+        margin-top: 10px;
+        height: 135px;
+    }
+    .art{
+        min-height: 70vh;
+    }
+    .artphoto{
+        width: 165px;
+        height: 220px;
+    }
+    .artphoto1{
+        width: 165px;
+        height: 220px;
+    }
+    .layerart{
+        height: 220px;
+    }
+    .music-content h1{
+        text-align: center;
+    }
+    .art-content h1{
+        text-align: center;
+    }
+}
